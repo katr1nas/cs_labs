@@ -5,7 +5,7 @@ LETTER_VARIANTS = str.maketrans({"Ş": "Ș", "ş": "ș", "Ţ": "Ț", "ţ": "ț"}
 
 
 def validate_key(key):
-    if not isinstance(key, int) or isinstance(key, bool) or not 1 <= key <= 30:
+    if not isinstance(key, int) or not 1 <= key <= 30:
         raise ValueError("Key must be an integer from 1 to 30.")
 
 
